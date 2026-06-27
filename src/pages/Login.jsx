@@ -28,33 +28,35 @@ function Login() {
   };
 
   return (
-    <div className="p-10">
-      <h1 className="text-3xl font-bold mb-5">
-        Login
-      </h1>
+    <div className="min-h-screen flex items-center justify-center bg-gradient-to-r from-black to-gray-800">
+      <div className="bg-white p-10 rounded-2xl shadow-2xl w-[90%] max-w-md">
+        <h1 className="text-4xl font-bold text-center mb-8">
+          Welcome Back 👋
+        </h1>
 
-      <form
-        onSubmit={handleLogin}
-        className="flex flex-col gap-4 max-w-md"
-      >
-        <input
-          type="email"
-          placeholder="Enter Email"
-          className="border p-3 rounded"
-          onChange={(e) => setEmail(e.target.value)}
-        />
+        <form
+          onSubmit={handleLogin}
+          className="flex flex-col gap-5"
+        >
+          <input
+            type="email"
+            placeholder="Enter Email"
+            className="border p-3 rounded-lg"
+            onChange={(e) => setEmail(e.target.value)}
+          />
 
-        <input
-          type="password"
-          placeholder="Enter Password"
-          className="border p-3 rounded"
-          onChange={(e) => setPassword(e.target.value)}
-        />
+          <input
+            type="password"
+            placeholder="Enter Password"
+            className="border p-3 rounded-lg"
+            onChange={(e) => setPassword(e.target.value)}
+          />
 
-        <button className="bg-black text-white p-3 rounded">
-          Login
-        </button>
-      </form>
+          <button className="bg-black text-white p-3 rounded-lg hover:bg-gray-900">
+            Login
+          </button>
+        </form>
+      </div>
     </div>
   );
 }
