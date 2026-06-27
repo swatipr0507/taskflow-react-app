@@ -1,8 +1,9 @@
 function Home() {
   return (
-    <div>
-      <h1>Welcome to TaskFlow</h1>
-      <h1>Swati</h1>
+    <div className="p-10">
+      <h1 className="text-4xl font-bold">
+        Welcome to TaskFlow 🚀
+      </h1>
     </div>
   );
 }
